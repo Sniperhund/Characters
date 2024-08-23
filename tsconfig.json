@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "target": "ES6" /* Modern browsers support ES6 or higher. */,
+        "module": "ES6" /* Use 'ES6' or 'ESNext' for ESM modules. */,
+        "outDir": "./build" /* Output directory for compiled files. */,
+        "rootDir": "./assets/ts" /* Your source directory. */,
+        "strict": true /* Enable all strict type-checking options. */,
+        "esModuleInterop": true /* Ensure compatibility with CommonJS modules. */,
+        "moduleResolution": "node" /* Use 'node' to resolve modules in the same way as Node.js. */,
+        "forceConsistentCasingInFileNames": true,
+        "skipLibCheck": true,
+        "resolveJsonModule": true /* Allow importing JSON files as modules. */,
+        "allowSyntheticDefaultImports": true /* Allow default imports from modules with no default export. */,
+        "isolatedModules": true /* Ensures that each file can be transpiled independently. */,
+        "verbatimModuleSyntax": true /* Emit imports/exports exactly as written in the source code. */
+    },
+    "include": [
+        "./assets/ts/**/*.ts"
+    ] /* Ensure all TypeScript files are included. */,
+    "exclude": ["node_modules"] /* Exclude dependencies from compilation. */
+}

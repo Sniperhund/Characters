@@ -1,1 +1,24 @@
 @import url("/assets/css/default.css");
+@import url("/assets/css/apple-colors.css");
+
+body {
+    font-family: "Open Sans";
+    background-color: var(--color-gray-6);
+    color: white;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+a {
+    color: white;
+}
+
+.box-shadow {
+    box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.25);
+}

@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Ellie Willaims (Part one)",
+        "age": 14,
+        "status": "Alive",
+        "gender": "Female",
+        "relationship": [
+            {
+                "name": "Anna",
+                "relationship": "Mother",
+                "image": "Ellie/No_image_available.webp"
+            },
+            {
+                "name": "Riley Abel",
+                "relationship": "Best Friend",
+                "image": "Ellie/Riley.webp"
+            },
+            {
+                "name": "Joel Miller",
+                "relationship": "Father Figure",
+                "image": "Ellie/Joel.webp"
+            }
+        ],
+        "resides": [
+            {
+                "name": "Boston, Massachusetts",
+                "status": "Former",
+                "image": "Ellie/Boston.webp"
+            },
+            { "name": "The Farm, Wyoming", "status": "Former" },
+            { "name": "Jackson, Wyoming", "status": "Current" }
+        ],
+        "height": 160,
+        "short_description": "Ellie grew up as an orphan in the Boston quarantine zone and attended a military preparatory school, where she met and befriended Riley Abel.\n When Ellie was fourteen, the pair were both infected with the Cordyceps brain infection, where Ellie discovered she was immune.",
+        "images": ["Ellie/Ellie-1.webp", "Ellie/No_image_available.webp"]
+    }
+]
