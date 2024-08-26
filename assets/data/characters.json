@@ -1,5 +1,6 @@
 [
     {
+        "id": 0,
         "name": "Ellie Willaims (Part one)",
         "age": 14,
         "status": "Alive",
@@ -7,31 +8,263 @@
         "relationship": [
             {
                 "name": "Anna",
-                "relationship": "Mother",
-                "image": "Ellie/No_image_available.webp"
+                "relationship": "Mother"
             },
             {
                 "name": "Riley Abel",
                 "relationship": "Best Friend",
-                "image": "Ellie/Riley.webp"
+                "link": 5,
+                "image": "Riley/Riley.webp"
             },
             {
                 "name": "Joel Miller",
                 "relationship": "Father Figure",
-                "image": "Ellie/Joel.webp"
+                "image": "Joel/Joel.webp",
+                "link": 1
             }
         ],
         "resides": [
             {
                 "name": "Boston, Massachusetts",
                 "status": "Former",
-                "image": "Ellie/Boston.webp"
+                "image": "common/Boston.webp"
             },
-            { "name": "The Farm, Wyoming", "status": "Former" },
-            { "name": "Jackson, Wyoming", "status": "Current" }
+            {
+                "name": "The Farm, Wyoming",
+                "status": "Former"
+            },
+            {
+                "name": "Jackson, Wyoming",
+                "status": "Current"
+            }
         ],
         "height": 160,
         "short_description": "Ellie grew up as an orphan in the Boston quarantine zone and attended a military preparatory school, where she met and befriended Riley Abel.\n When Ellie was fourteen, the pair were both infected with the Cordyceps brain infection, where Ellie discovered she was immune.",
-        "images": ["Ellie/Ellie-1.webp", "Ellie/No_image_available.webp"]
+        "images": ["Ellie/Ellie-1.webp", "common/No_image_available.webp"]
+    },
+    {
+        "id": 1,
+        "name": "Joel Miller (Part one)",
+        "age": 51,
+        "status": "Deceased",
+        "gender": "Male",
+        "relationship": [
+            {
+                "name": "Tommy Miller",
+                "relationship": "Brother",
+                "image": "Tommy/Tommy.webp",
+                "link": 3
+            },
+            {
+                "name": "Sarah Miller",
+                "relationship": "Daughter",
+                "image": "Sarah/Sarah.webp",
+                "link": 2
+            },
+            {
+                "name": "Ellie Williams",
+                "relationship": "Surrogate daughter",
+                "image": "Ellie/Ellie-1.webp",
+                "link": 0
+            }
+        ],
+        "resides": [
+            {
+                "names": "Austin, Texas",
+                "status": "Former"
+            },
+            {
+                "name": "Boston, Massachusetts",
+                "status": "Former",
+                "image": "common/Boston.webp"
+            },
+            {
+                "name": "Jackson, Wyoming",
+                "status": "Current"
+            }
+        ],
+        "height": 182,
+        "short_description": "Joel was a survivor in post-apocalyptic America that had been ravaged by the Cordyceps brain infection. After losing his only daughter Sarah in the early stages of the outbreak, Joel became a ruthless and cynical smuggler eventually tasked with smuggling and protecting Ellie Williams, a young girl who was the key to mankind's survival. Joel eventually formed a strong bond with her.",
+        "images": ["Joel/Joel.webp"]
+    },
+    {
+        "id": 2,
+        "name": "Sarah Miller",
+        "age": 12,
+        "status": "Deceased",
+        "gender": "Female",
+        "relationship": [
+            {
+                "name": "Joel Miller",
+                "relationship": "Father",
+                "image": "Joel/Joel.webp",
+                "link": 1
+            },
+            {
+                "name": "Tommy Miller",
+                "relationship": "Uncle",
+                "image": "Tommy/Tommy.webp",
+                "link": 3
+            }
+        ],
+        "resides": [
+            {
+                "name": "Austin, Texas",
+                "status": "Current"
+            }
+        ],
+        "short_description": "Sarah was the 12-year-old daughter of Joel before the Cordyceps brain infection outbreak.",
+        "images": ["Sarah/Sarah.webp"]
+    },
+    {
+        "id": 3,
+        "name": "Tommy Miller (Part one)",
+        "status": "Alive",
+        "gender": "Male",
+        "relationship": [
+            {
+                "name": "Joel Miller",
+                "relationship": "Brother",
+                "image": "Joel/Joel.webp",
+                "link": 1
+            },
+            {
+                "name": "Sarah Miller",
+                "relationship": "Niece",
+                "image": "Sarah/Sarah.webp",
+                "link": 2
+            },
+            {
+                "name": "Maria Miller",
+                "relationship": "Wife",
+                "image": "Maria/Maria.webp",
+                "link": 4
+            }
+        ],
+        "resides": [
+            {
+                "name": "Austin, Texas",
+                "status": "Former"
+            },
+            {
+                "name": "Boston, Massachusetts",
+                "status": "Former",
+                "image": "common/Boston.webp"
+            },
+            {
+                "name": "Denver, Colorado",
+                "status": "Former"
+            },
+            {
+                "name": "Jackson, Wyoming",
+                "status": "Current"
+            }
+        ],
+        "short_description": "A caring and compassionate man, Tommy survived the early years of the outbreak with Joel. However, the two separated as Tommy sought a more meaningful life than mere survival, leading him to join the Fireflies and later seek redemption through his wife, Maria, and the community of Jackson.",
+        "images": ["Tommy/Tommy.webp"]
+    },
+    {
+        "id": 4,
+        "name": "Maria Miller (Part one)",
+        "status": "Alive",
+        "gender": "Female",
+        "relationship": [
+            {
+                "name": "Tommy Miller",
+                "relationship": "Husband",
+                "image": "Tommy/Tommy.webp",
+                "link": 3
+            },
+            {
+                "name": "Joel Miller",
+                "relationship": "Brother-in-law",
+                "image": "Joel/Joel.webp",
+                "link": 1
+            },
+            {
+                "name": "Sarah Miller",
+                "relationship": "Niece",
+                "image": "Sarah/Sarah.webp",
+                "link": 2
+            }
+        ],
+        "resides": [
+            {
+                "name": "Jackson, Wyoming",
+                "status": "Current"
+            }
+        ],
+        "short_description": "Maria Miller is Tommy Miller's wife. She leads a thriving community in Jackson, Wyoming.",
+        "images": ["Maria/Maria.webp"]
+    },
+    {
+        "id": 5,
+        "name": "Riley Abel",
+        "age": 16,
+        "status": "Deceased",
+        "gender": "Female",
+        "relationship": [
+            {
+                "name": "Ellie Williams",
+                "relationship": "Friend",
+                "image": "Ellie/Ellie-1.webp",
+                "link": 0
+            }
+        ],
+        "resides": [
+            {
+                "name": "Boston, Massachusetts",
+                "status": "Current",
+                "image": "common/Boston.webp"
+            }
+        ],
+        "short_description": "A sixteen-year-old survivor who lived in Boston, Riley disliked the military and often spoke favorably of the Fireflies, defending their supposedly radical actions. During her time in Boston, she befriended Ellie and the two quickly bonded and became best friends.",
+        "images": ["Riley/Riley.webp"]
+    },
+    {
+        "id": 6,
+        "name": "David",
+        "status": "Deceased",
+        "gender": "Female",
+        "relationship": [
+            {
+                "name": "Ellie Williams",
+                "relationship": "Antagonistic",
+                "image": "Ellie/Ellie-1.webp",
+                "link": 0
+            },
+            {
+                "name": "James",
+                "relationship": "Right-hand man"
+            }
+        ],
+        "resides": [
+            {
+                "name": "Silver Lake, Colorado",
+                "status": "Current"
+            }
+        ],
+        "short_description": "David was the leader of a group of cannibalistic survivors.",
+        "images": ["David/David.webp"]
+    },
+    {
+        "id": 7,
+        "name": "Bill",
+        "status": "Alive",
+        "gender": "Male",
+        "relationship": [
+            {
+                "name": "Frank",
+                "relationship": "Frank"
+            }
+        ],
+        "resides": [
+            {
+                "name": "Lincoln, Massachusetts",
+                "status": "Current"
+            }
+        ],
+        "short_description": "Bill was well-equipped for survival before the Cordyceps brain infection outbreak, having obtained mechanical skills at some point in his life as he is able to repair vehicles and build things from scraps. He also adapted to the new world and became a competent scavenger.",
+        "images": ["Bill/Bill.webp"]
     }
 ]
