@@ -32,4 +32,10 @@ a {
 
     border-radius: 5px;
     background: var(--color-gray-5);
+
+    transition: transform 0.15s ease-in-out;
+}
+
+.btn:hover {
+    transform: translateZ(0) scale(1.075);
 }
