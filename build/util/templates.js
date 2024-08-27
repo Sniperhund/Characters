@@ -11,6 +11,7 @@ export const characterTemplate = (char) => `
                 url('/assets/imgs/${char.images[0]}');
         "
     >
+        <img src="/assets/imgs/${char.images[0]}" alt="${char.name}" />
         <h2>${char.name}</h2>
     </article>
 </a>

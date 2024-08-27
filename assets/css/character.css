@@ -58,15 +58,6 @@
 }
 
 #back {
-    display: inline-flex;
-    padding: 6px 10px;
-    justify-self: center;
-    align-items: center;
-    gap: 10px;
-
-    border-radius: 5px;
-    background: var(--color-gray-5);
-
     margin-bottom: 10px;
 }
 

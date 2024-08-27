@@ -8,11 +8,6 @@ h1 {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 
-    padding: 0 20px;
-
-    max-width: 1450px;
-    margin: 0 auto;
-
     article {
         background-position: center;
         background-size: cover;
@@ -28,9 +23,70 @@ h1 {
 
         display: flex;
 
+        img {
+            display: none;
+        }
+
         h2 {
             margin-top: auto;
             padding: 15px 20px;
         }
     }
+}
+
+#characters.list {
+    display: flex;
+    flex-direction: column;
+
+    a article {
+        max-width: none;
+        height: initial;
+        background: none !important;
+        box-shadow: none;
+
+        align-items: center;
+
+        h2 {
+            padding: 0 20px;
+            margin-top: 0;
+            font-size: 5.4rem;
+        }
+
+        img {
+            display: block;
+            max-width: 250px;
+            max-height: 250px;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+
+            border-radius: 10px;
+        }
+    }
+}
+
+.page {
+    margin: 0 auto;
+    max-width: 1450px;
+}
+
+@media screen and (max-width: 1490px) {
+    .page {
+        padding: 0 20px;
+    }
+}
+
+.btn {
+    font-size: 2.4rem;
+    cursor: pointer;
+}
+
+.active {
+    background-color: var(--color-gray-4);
+}
+
+.buttons {
+    padding-bottom: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: end;
 }
