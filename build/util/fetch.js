@@ -16,7 +16,8 @@ export const fetchCharacters = () => __awaiter(void 0, void 0, void 0, function*
 });
 export const fetchCharacter = (i) => __awaiter(void 0, void 0, void 0, function* () {
     const characters = yield fetchCharacters();
-    if (characters[i])
-        return characters[i];
+    const character = characters.find((value) => value.id == i);
+    if (character)
+        return character;
     throw new Error("Failed to fetch character");
 });

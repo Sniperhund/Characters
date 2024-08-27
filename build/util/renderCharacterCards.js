@@ -8,46 +8,13 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 import { fetchCharacters } from "./fetch.js";
-/*
-    <a href="/character.html?i=0">
-        <article
-            class="box-shadow"
-            style="
-                background-image: linear-gradient(
-                        180deg,
-                        rgba(0, 0, 0, 0) 80.5%,
-                        rgba(0, 0, 0, 0.75) 95%
-                    ),
-                    url('/assets/imgs/Ellie/Ellie-1.webp');
-            "
-        >
-            <h2>Ellie Williams</h2>
-        </article>
-    </a>
-*/
+import { characterTemplate } from "./templates.js";
 const characterContainer = document.querySelector("#characters");
-const createCharacterCard = (char, i) => {
+const createCharacterCard = (char, id) => {
     if (!characterContainer || !char) {
         throw new Error("Something went wrong!");
     }
-    const characterTemplate = (char, i) => `
-        <a href="/character.html?i=${i}">
-            <article
-                class="box-shadow"
-                style="
-                    background-image: linear-gradient(
-                            180deg,
-                            rgba(0, 0, 0, 0) 80.5%,
-                            rgba(0, 0, 0, 0.75) 95%
-                        ),
-                        url('/assets/imgs/${char.images[0]}');
-                "
-            >
-                <h2>${char.name}</h2>
-            </article>
-        </a>
-    `;
-    characterContainer.insertAdjacentHTML("beforeend", characterTemplate(char, i));
+    characterContainer.insertAdjacentHTML("beforeend", characterTemplate(char, id));
 };
 export function renderCharacterCards() {
     return __awaiter(this, void 0, void 0, function* () {
@@ -56,6 +23,6 @@ export function renderCharacterCards() {
             console.error(response.message);
             return;
         }
-        response.forEach((character, i) => createCharacterCard(character, i));
+        response.forEach((character) => createCharacterCard(character, character.id));
     });
 }

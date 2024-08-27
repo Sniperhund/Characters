@@ -1,7 +1,7 @@
 export var Status;
 (function (Status) {
     Status["Alive"] = "Alive";
-    Status["Dead"] = "Dead";
+    Status["Dead"] = "Deceased";
 })(Status || (Status = {}));
 /* There's only two genders */
 export var Gender;

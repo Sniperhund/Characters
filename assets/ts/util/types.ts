@@ -14,23 +14,27 @@ export enum ResideStatus {
     Former = "Former",
 }
 
+export type Relationship = {
+    name: string
+    relationship: string
+    image?: string
+    link?: number
+}
+
+export type Reside = {
+    name: string
+    status: ResideStatus
+    image?: string
+}
+
 export type Character = {
     id: number
     name: string
     age?: number
     status: Status
     gender: Gender
-    releationship: {
-        name: string
-        relationship: string
-        image?: string
-        link?: number
-    }[]
-    resides: {
-        name: string
-        status: ResideStatus
-        image?: string
-    }[]
+    relationship: Relationship[]
+    resides: Reside[]
     height?: number
     short_description: string
     images: string[]

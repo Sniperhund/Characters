@@ -13,7 +13,9 @@ export const fetchCharacters = async (): Promise<Character[]> => {
 export const fetchCharacter = async (i: number): Promise<Character> => {
     const characters = await fetchCharacters()
 
-    if (characters[i]) return characters[i]
+    const character = characters.find((value: Character) => value.id == i)
+
+    if (character) return character
 
     throw new Error("Failed to fetch character")
 }

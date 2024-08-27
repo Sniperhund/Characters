@@ -1,7 +1,7 @@
 [
     {
         "id": 0,
-        "name": "Ellie Willaims (Part one)",
+        "name": "Ellie Willaims",
         "age": 14,
         "status": "Alive",
         "gender": "Female",
@@ -40,11 +40,11 @@
         ],
         "height": 160,
         "short_description": "Ellie grew up as an orphan in the Boston quarantine zone and attended a military preparatory school, where she met and befriended Riley Abel.\n When Ellie was fourteen, the pair were both infected with the Cordyceps brain infection, where Ellie discovered she was immune.",
-        "images": ["Ellie/Ellie-1.webp", "common/No_image_available.webp"]
+        "images": ["Ellie/Ellie-1.webp"]
     },
     {
         "id": 1,
-        "name": "Joel Miller (Part one)",
+        "name": "Joel Miller",
         "age": 51,
         "status": "Deceased",
         "gender": "Male",
@@ -70,7 +70,7 @@
         ],
         "resides": [
             {
-                "names": "Austin, Texas",
+                "name": "Austin, Texas",
                 "status": "Former"
             },
             {
@@ -118,7 +118,7 @@
     },
     {
         "id": 3,
-        "name": "Tommy Miller (Part one)",
+        "name": "Tommy Miller",
         "status": "Alive",
         "gender": "Male",
         "relationship": [
@@ -165,7 +165,7 @@
     },
     {
         "id": 4,
-        "name": "Maria Miller (Part one)",
+        "name": "Maria Miller",
         "status": "Alive",
         "gender": "Female",
         "relationship": [
